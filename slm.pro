@@ -8,5 +8,5 @@ CONFIG += c++11
 HEADERS += inc/slm.h
 SOURCES += src/main.cpp src/slm.cpp
 
-CONFIG += link_pkgconfig
-PKGCONFIG += ilm
+INCLUDEPATH += ${PKG_CONFIG_SYSROOT_DIR}/usr/include
+LIBS += -L${PKG_CONFIG_SYSROOT_DIR} -lilmControl -lilmCommon
