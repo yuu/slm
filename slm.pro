@@ -10,3 +10,6 @@ SOURCES += src/main.cpp src/slm.cpp
 
 INCLUDEPATH += ${PKG_CONFIG_SYSROOT_DIR}/usr/include
 LIBS += -L${PKG_CONFIG_SYSROOT_DIR} -lilmControl -lilmCommon
+
+target.path = /usr/bin
+INSTALLS += target
