@@ -82,7 +82,6 @@ void slm::change_layout(t_ilm_uint id, t_ilm_bool created)
     {
         ilm_surfaceSetSourceRectangle(camera, 0, 0, 640, 480);
         ilm_surfaceSetDestinationRectangle(camera, 695, 300, 535, 485);
-        ilm_surfaceSetVisibility(camera, true);
 
         t_ilm_surface order[] = {camera};
         ilm_layerSetRenderOrder(camera, order, 1);
