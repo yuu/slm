@@ -23,7 +23,7 @@ void slm::start()
     create_layer(map);
 
     t_ilm_layer renderOrder[] = {camera, remo, black, map};
-    ilm_displaySetRenderOrder(screen_id_, renderOrder, 1);
+    ilm_displaySetRenderOrder(screen_id_, renderOrder, 4);
     ilm_commitChanges();
 
     ilm_registerNotification(slm::notifyed, this);
