@@ -22,7 +22,7 @@ void slm::start()
     create_layer(black);
     create_layer(map);
 
-    t_ilm_layer renderOrder[] = {camera, remo, black, map};
+    t_ilm_layer renderOrder[] = {black, map, camera, remo};
     ilm_displaySetRenderOrder(screen_id_, renderOrder, 4);
     ilm_commitChanges();
 
