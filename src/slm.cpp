@@ -5,6 +5,15 @@ static const uint32_t remo   = 20001;
 static const uint32_t black  = 20002;
 static const uint32_t map    = 2147483649;
 
+slm::slm()
+{
+    // runtime error: QObject::connect: Cannot queue arguments of type 't_ilm_uint'
+    {
+        qRegisterMetaType<t_ilm_uint>("t_ilm_uint");
+        qRegisterMetaType<t_ilm_bool>("t_ilm_bool");
+    }
+}
+
 void slm::start()
 {
     ilmErrorTypes err = ilm_init();

@@ -8,6 +8,7 @@ class slm : public QObject {
 Q_OBJECT
 
 public:
+    slm();
     void start();
     void create_layer(t_ilm_layer id);
 
